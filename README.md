@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @MargeHB
-- 👀 I’m interested in coding, and learning coding!!
+- 👀 I’m interested in coding, and learning code!!
 - 🌱 I’m currently learning Desarrollo de aplicaciones JEE con Spring Framework
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
