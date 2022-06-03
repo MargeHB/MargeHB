@@ -1,0 +1,74 @@
+body{
+   /*background-color:#bff0f7;*/
+   background-color: whitesmoke;
+   text-align: center;
+   
+}
+header{
+   text-align: center;
+   width: 80%;
+   height: 80%;
+   font-weight: bolder;
+   font-style: italic; 
+   font-size:  48pt;
+   text-decoration-style: solid;
+   color:steelblue;
+   text-shadow:1px 1px 4px black;
+   padding-bottom: 2%;
+   padding-top: 5%;
+}
+
+h2{
+   text-decoration-style: solid;
+   color:steelblue;
+   text-shadow:1px 1px 4px black;
+   font-size: 24pt;
+   text-align: start; 
+   text-indent: 7%;
+   padding-top: 1%;
+}
+
+/*Tabla <style> */
+table{
+width: 60%;
+text-align:justify;
+flex-flow: column;
+color:black;
+position:relative;
+top: 0px;
+left: 100px;
+padding-bottom: 1%;
+
+}
+
+tr{
+text-align: justify;
+width: max-content;
+}
+
+th{
+width: fit-content;
+  text-align: center;
+  border-color: steelblue;
+  border-collapse: collapse;
+border-style: dotted;
+background-color: steelblue;
+lighting-color: steelblue transparent;
+}
+
+h3{
+   color: black;
+  text-shadow:1px 1px 4px black;
+   font-size: 15pt;
+   text-align: start; 
+   text-indent: 7%;
+}
+
+p{
+   font-size: 12pt;
+   text-align: start; 
+   text-indent: 7%;
+   line-height: 8px;
+   
+}
+
