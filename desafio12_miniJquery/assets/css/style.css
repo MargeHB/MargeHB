@@ -1,0 +1,12 @@
+#cambiar{
+background-color: blue;
+font-size: 20px;
+}
+
+#par, #par2{
+background-color: blueviolet;
+}
+
+#impar, #impar2, #impar3{
+background-color: aqua;
+}
