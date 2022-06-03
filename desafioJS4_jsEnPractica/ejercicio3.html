@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3</title>
+
+
+</head>
+
+<body>
+    <div>
+        <div>
+            <h2>
+                Resultado: <span class="resultado"></span>
+            </h2>
+            <div>
+                <div>
+                    <div>
+                        <label for="">Valor 1</label>
+                        <input id="valor1" type="text">
+                    </div>
+                    <div>
+                        <label for="">Valor 2</label>
+                        <input id="valor2" type="text">
+                    </div>
+                    <div style="display: flex">
+                        <button id="btn-sumar" type="button">
+                            Sumar
+                        </button>
+                        <button id="btn-restar" type="button">
+                            Restar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+       
+        //rescato valores entregados
+        let num1 = document.getElementById('valor1').value;
+        let num2 = document.getElementById('valor2').value;
+
+        //operación suma
+        document.getElementById('btn-sumar').addEventListener('click', function () {
+                let num1 = document.getElementById('valor1').value;
+                let num2 = document.getElementById('valor2').value;
+                let total3 = parseInt(num1) + parseInt(num2);
+
+                document.write("El resultado de la suma es: " + total3);
+                document.querySelector('.resultado').innerHTML = total3; })
+      
+
+        //operación resta
+        document.getElementById('btn-restar').addEventListener('click', function (){
+                let num1 = document.getElementById('valor1').value;
+                let num2 = document.getElementById('valor2').value;
+                total3 = parseInt(num1) - parseInt(num2);
+                    if(total3<=0){
+                        total3=0;
+                document.write("El resultado de la resta es: " + "0");
+                document.querySelector('.resultado').innerHTML = "0"; 
+                    }
+                document.write("El resultado de la resta es: " + total3);
+                document.querySelector('.resultado').innerHTML = total3;
+                });
+
+        //limpio workspace
+       function limpiar( ) {
+          document.querySelector('.resultado').innerHTML = "";
+        }
+      
+     </script>
+</body>
+
+</html>
