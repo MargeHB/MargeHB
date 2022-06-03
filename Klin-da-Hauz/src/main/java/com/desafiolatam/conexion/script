@@ -1,0 +1,24 @@
+//se crea tabla Producto y se agregan valores
+CREATE TABLE Producto(
+IDproducto NUMBER PRIMARY KEY NOT NULL,
+nombreProducto VARCHAR(75) NOT NULL,
+precio NUMBER NOT NULL,
+descripcion VARCHAR (200),
+IDcategoria NUMBER NOT NULL,
+FOREIGN KEY (IDcategoria) REFERENCES categoria(IDcategoria));
+
+INSERT INTO Producto(IDproducto, nombreProducto, precio, descripcion, IDcategoria)VALUES (1,'Ariel',4400, 'Quita Manchas', 43);
+INSERT INTO Producto(IDproducto, nombreProducto, precio, descripcion, IDcategoria)VALUES (2, 'Omo',3500, 'Quita Manchas', 44);
+
+
+//se crea tabla Categor�a y se agregan valores
+CREATE TABLE Categoria(
+IDcategoria NUMBER PRIMARY KEY NOT NULL,
+nombreCategoria VARCHAR(50) NOT NULL);
+CREATE SEQUENCE categoria_seq START WITH 10 increment by 10;
+
+INSERT INTO categoria (idcategoria, nombrecategoria)VALUES (44,'Detergentes L�quidos');
+INSERT INTO categoria (idcategoria, nombrecategoria)VALUES (43,'Detergentes en Polvo');
+INSERT INTO categoria (idcategoria, nombrecategoria)VALUES (42,'Lavalozas');
+INSERT INTO categoria (idcategoria, nombrecategoria)VALUES (41,'Articulos Aseo');
+INSERT INTO categoria (idcategoria, nombrecategoria)VALUES (40,'Varios');
