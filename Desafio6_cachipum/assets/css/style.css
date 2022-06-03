@@ -1,0 +1,22 @@
+body, html{
+height: 100%;
+}
+.container{
+height: 100%;
+background-image: url(/assets/css/img/war2.png);
+width: 100%;
+background-size: cover;
+}
+
+.reglas{
+display: flex;
+width: 50%;
+align-content: flex-end;
+justify-content: flex-end;
+}
+
+h2{
+font-size: x-large;
+font-family: Impact, Haettenschweiler;
+letter-spacing: 5px;
+}
